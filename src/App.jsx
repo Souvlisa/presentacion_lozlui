@@ -525,7 +525,7 @@ function App() {
               <header className="flex items-center justify-between border-b border-slate-800 bg-slate-950/80 px-8 py-4 backdrop-blur-lg">
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-cyan-400" />
-                  <h1 className="text-lg font-semibold text-slate-100">LOZLUI - Hackeo Yahoo</h1>
+                  <h1 className="text-lg font-semibold text-slate-100">Luisangeli Lozada</h1>
                 </div>
                 <div className="text-sm font-medium text-slate-400">{index + 1} <span className="text-slate-600">/</span> {slides.length}</div>
               </header>
@@ -538,6 +538,9 @@ function App() {
                         <div className="min-w-0">
                           <h2 className="text-4xl font-bold text-white mb-2 leading-tight">{slide.title}</h2>
                           <p className="text-lg text-slate-300">{slide.subtitle}</p>
+                          {slide.id === 0 && (
+                            <p className="text-sm text-slate-400 mt-1">Luisangeli Lozada</p>
+                          )}
                         </div>
                         <div className={`inline-flex items-center justify-center rounded-3xl bg-gradient-to-br ${slide.color} p-6 shadow-xl shadow-white/5 transition-transform duration-500 hover:scale-105`}>
                           <IconComponent className="w-12 h-12 text-white" strokeWidth={1.5} />
