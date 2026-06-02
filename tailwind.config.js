@@ -1,5 +1,3 @@
-import typography from '@tailwindcss/typography'
-
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
@@ -7,10 +5,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
-      boxShadow: {
-        panel: '0 24px 80px rgba(15, 23, 42, 0.18)',
-      },
     },
   },
-  plugins: [typography],
+  plugins: [],
 }
